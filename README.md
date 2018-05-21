@@ -1,0 +1,2 @@
+# ChroniqueBot
+C crap bot 
