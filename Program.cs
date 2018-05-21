@@ -30,14 +30,10 @@ class Program
         Console.Title = "Kitten's ChroniqueBot vBeta";
 		var client = new DiscordSocketClient();
 		client.Log += Log;
-
-		//client.DownloadUsersAsync();
-
-		// client.GetGuild((ulong)226437690910965761).Users;
 		client.MessageReceived += MessageReceived;
             //client.Mess
 		client.SetGameAsync(".roulettev2 & .roulette !");
-		string token = "Mzc4ODYyOTU4OTQxNTY5MDI1.DOhxTA.O41EIvO7dafwlpL92LgNbZpf0ps"; // Remember to keep this private!
+		string token = "TON TOKEN ICI"; // Remember to keep this private!
 		await client.LoginAsync(TokenType.Bot, token);
 		await client.StartAsync();
         
