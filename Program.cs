@@ -243,7 +243,6 @@ class Program
                     var currentUser = ChroniqueUsersList.FirstOrDefault(x => x.Id == message.Author.Id);
                     if(currentUser != null)
                     {
-                        currentUser.hasExtraLuck = true;
                         await Discord.UserExtensions.SendMessageAsync(MessageAuthor, "Applied");
                     }
                 }
